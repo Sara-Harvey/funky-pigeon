@@ -133,8 +133,5 @@ div.content-container {
 @media (min-width: 768px) and (max-width: 991px) {
     .content-container {
         padding: 0 1.5em;
-    }
-    #scroll-message {
-      display: none;
-    }
+  }
 }
