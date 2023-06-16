@@ -134,4 +134,7 @@ div.content-container {
     .content-container {
         padding: 0 1.5em;
     }
+    #scroll-message {
+      display: none;
+    }
 }
