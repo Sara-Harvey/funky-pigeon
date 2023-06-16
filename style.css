@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: 'Trickster-Reg';
+  src: url('fonts/Trickster-Reg.ttf') format('truetype');
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited, 
+a:active {
+  color: gold;
+}
+
+a:hover {
+  color: white;
+}
+
+.header-section {
+  display: flex;
+}
+
+.section-1 {
+  padding: 20px;
+  width: 40%;
+}
+
+.section-1 h1 {
+  text-decoration: overline .5px;
+}
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.section-a {
+  color: white;
+  background: blue;
+  border: .5px solid white;
+  padding: 10px;
+}
+
+.section-a h2 {
+  font-family: 'Trickster-Reg', sans-serif;
+  font-size: 2.5rem;
+  padding: 0;
+}
+
+.section-b {
+  color: white;
+  background: black;
+  border: .5px solid white;
+  padding: 0;
+}
+
+h1, h2, p {
+  font-family: Roboto;
+  text-align: center;
+  padding-bottom: 20px;
+  color: white;
+  padding: 10px 0;
+}
+
+img {
+  width: 200px;
+  padding: 15px;
+}
+
+div.content-container {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue gold;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: gold;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid gold;
+}
+
+
+/* small devices */
+@media (min-width: 320px) and (max-width: 767px) {
+
+     .header-section {
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+     }
+     .section-1,
+     .section-2 {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+     }
+     .section-a h2 {
+      font-size: 2rem;
+     }
+     div.content-container {
+      flex-direction: column;
+      padding: 0;
+      margin: auto;
+      width: 50%;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .content-container {
+        padding: 0 1.5em;
+    }
+}
